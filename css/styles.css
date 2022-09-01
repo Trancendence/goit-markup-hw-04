@@ -9,13 +9,23 @@
 --main-color7:#2F303A;
 --main-color8:#ECECEC;
 --main-color9:#EEEEEE;
---main-color10:#188CE8;}
+--main-color10:#188CE8;
+--social-bg:#AFB1B8;}
+
 /* Container */
 .container {
 width: 1200px;
 padding-left: 15px;
 padding-right: 15px;
 margin: 0 auto;}
+/* Icon */
+.icon {
+display: inline-block;
+width: 1em;
+height: 1em;
+stroke-width: 0;
+stroke: currentColor;
+fill: currentColor;}
 /* Body */
 body {
 font-family: 'Roboto', sans-serif;
@@ -43,6 +53,11 @@ padding-top:94px;
 padding-bottom:94px;}
 .link:hover {
 color:var(--main-color2);}
+/* Address icon */
+.address-icon {
+fill:var(--main-color5);}
+.address-icon:hover {
+fill:var(--main-color2);}
 /* Hide H1 */
 .visually-hidden {
 position: absolute;
@@ -59,8 +74,12 @@ margin: -1px;}
 .link.current {
 color: var(--main-color2);}
 /* Bg */
-.bg {
-background:var(--main-color7);
+.bg { 
+background:linear-gradient(to right, rgba(47, 48, 58, 0.4), #C4C4C4); 
+background-image:url(../images/bg.jpg);
+background-position: 50% 50%;
+background-repeat: no-repeat;
+background-size: 1600px 600px;
 padding-top: 200px;
 padding-bottom: 200px;}
 /* Header */
@@ -171,6 +190,10 @@ justify-content:space-between;
 margin: 0;}
 .lielement {
 flex-basis: calc((100% -30px * 3) / 4);}
+/* icon=list */
+.icon-list {
+background-color: var(--main-color6);
+border-radius: 4px;}
 /* Наша команда */
 .command {
 background-color: var(--main-color6);}   
@@ -180,8 +203,7 @@ display: flex;
 justify-content:space-between;}
 /* section1 */
 .section1 {
-padding-top: 0;
-}
+padding-top: 0;}
 /* Наша команда */
 .list1 {
 font-weight: 500;
@@ -208,7 +230,28 @@ margin-bottom: 10px;}
 font-size: 16px;
 line-height: 1.18;
 color:var(--main-color5);
-margin: 0;}
+margin: 0;
+margin-bottom: 10px;}
+/* social links */
+.social-links {
+width: 44px;
+height: 44px;}
+.list-icons > li {
+display: inline-flex;
+flex-direction: row;
+margin-right: 10px;}
+.list-icons > li:last-of-type {
+margin-right: 0px;}
+/* social icon */
+use.social-icon {
+fill:var(--social-bg);}
+use.social-icon:hover {
+fill:var(--main-color1);}
+/* Ellipse */
+.ellipse {
+fill:var(--main-color1);}
+.ellipse:hover {
+fill:var(--main-color2);}
 /* Footer bg */
 .footer {
 background:var(--main-color7); 
