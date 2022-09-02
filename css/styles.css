@@ -11,7 +11,8 @@
 --main-color9:#EEEEEE;
 --main-color10:#188CE8;
 --social-bg:#AFB1B8;
---footer-icon:rgba(255, 255, 255, 0.1)}
+--footer-icon:rgba(255, 255, 255, 0.1);
+--boxes-hover:rgba(0, 0, 0, 0.3);}
 
 /* Container */
 .container {
@@ -323,7 +324,9 @@ font-style: normal;}
 .boxbutton {
 margin-right:8px;}
 .boxbutton:last-of-type {
-margin-right:0; }
+margin-right:0;}
+.boxbutton:hover {
+box-shadow: 3px 3px 5px 2px var(--boxes-hover);}
 /* Button3 */
 .button3 {
 display: flex;
@@ -371,5 +374,7 @@ color:var(--main-color3);
 margin:0;}
 /* Boxes */
 .boxes {
-width: calc((100% - 60px) / 3);
-}
+width: calc((100% - 60px) / 3);}
+/* a hover listitem4 */
+.boxes:hover {
+box-shadow: 2px 2px 5px 2px var(--boxes-hover);}
