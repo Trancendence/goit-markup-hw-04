@@ -63,10 +63,7 @@ color:var(--main-color2);
 }
 /* Address icon */
 .address-icon {
-fill:var(--main-color5);
-}
-.address-icon:hover {
-fill:var(--main-color2);
+margin-right: 10px;
 }
 /* Hide H1 */
 .visually-hidden {
@@ -153,7 +150,6 @@ font-weight: 700;
 font-size: 26px;
 color:var(--main-color);
 line-height: 1.2;}
-.lg1 {}
 /* Web */
 .web {
 color:var(--main-color2);
@@ -174,14 +170,16 @@ color:var(--main-color);
 font-weight: 500;
 color:var(--main-color);
 }
-/* info@devstudio.com */
+/* email + tel */
 .address1 {
 color:var(--main-color3);
-font-weight: 500;}
-/* +38 096 111 11 11 */
-.address2 {
-color:var(--main-color3);
 font-weight: 500;
+fill: var(--main-color5);
+display: flex;
+align-items: center;
+justify-content: center;}
+.address1:hover {
+fill: var(--main-color2);
 }
 .list-item {
 display: flex;
@@ -201,6 +199,10 @@ line-height: 1.71;
 color:var(--main-color3);
 margin: 0 auto;
 }
+
+
+/* Наша команда */
+
 /* Title */
 .title {
 font-weight: 700;
@@ -220,10 +222,25 @@ margin: 0;
 .lielement {
 flex-basis: calc((100% -30px * 3) / 4);
 }
+/* lieelement div */
+.lielement div {
+background-color: var(--main-color6);
+height: 120px;
+border-radius: 4px;
+margin-right: 30px;
+margin-bottom: 30px;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+.lielement .div1 {
+margin-right: 0px;
+}
 /* icon=list */
 .icon-list {
-background-color: var(--main-color6);
-border-radius: 4px;
+display: block;
+margin:auto;
+width: 50%;
 }
 /* Наша команда */
 .command {
@@ -276,6 +293,17 @@ margin-bottom: 10px;
 width: 44px;
 height: 44px;
 }
+.ellipse {
+width: 44px;
+height: 44px;
+border-radius:50%;
+background-color: var(--main-color1);
+fill: var(--social-bg);
+}
+.ellipse:hover {
+background-color: var(--main-color2);
+fill: var(--main-color1);
+}
 .list-icons > li {
 display: inline-flex;
 flex-direction: row;
@@ -284,52 +312,58 @@ margin-right: 10px;
 .list-icons > li:last-of-type {
 margin-right: 0px;
 }
-/* social icon */
-use.social-icon {
-fill:var(--social-bg);
-}
-use.social-icon:hover {
-fill:var(--main-color1);
-}
-/* Ellipse */
-.ellipse {
-fill:var(--main-color1);
-}
-.ellipse:hover {
-fill:var(--main-color2);
-}
-/* clients */
-.clients {
+
+
+/* Clients */
+
+/* clients h2 */
+.clients h2 {
 font-weight: 700;
 font-size: 36px;
 line-height: 1.16;
 text-align: center;
 margin: 0;
-padding-bottom: 50px;
+margin-bottom: 50px;
 }
-/* list-icon3 */
-.list-icon3 {
+/* clients li */
+.clients li {
 display: inline-flex;
 flex-direction:row;
 flex-wrap:nowrap;
+height:92px;
+width: 166px;
 border: 1px solid var(--social-bg);
 border-radius: 4px;
-margin-right: 30px;}
-.list-icon3:last-of-type {
+margin: 0;
+margin-right: 30px;
+}
+/* clients li:last-of-type */
+.clients li:last-of-type {
 margin-right: 0px;
 }
-.list-icon3:hover {
-border: 1px solid var(--main-color2);
+/* clients li svg */
+.clients li svg {
+width: 106px;
+height: 60px;
 }
-/* icon-list2 */
-.icon-list2 {
+/* clients li a */
+.clients li a {
+width:100%;
+display: flex;
+justify-content: center;
+align-items: center;
 fill: var(--social-bg);
-margin:15px 29px;
 }
-.icon-list2:hover {
-fill: var(--main-color2);
-}
-/* Footer bg */
+/* clients li a:hover */
+.clients li a:hover {
+border: 1px solid var(--main-color2);
+fill: var(--main-color2);}
+/* Clients end */
+
+
+/* Footer */
+
+
 .footer {
 background:var(--main-color7); 
 padding-top: 60px;
@@ -338,13 +372,21 @@ padding-bottom: 60px;
 .footerhead {
 font-weight: 700;
 line-height: 1.14;
+font-size: 14px;
 text-transform: uppercase;
 color:var(--main-color1);
 margin:0;
 margin-bottom: 20px;
 }
-.social-icon1 {
-fill:var(--main-color1);
+.ellipse1 {
+width: 44px;
+height: 44px;
+border-radius:50%;
+background-color: var(--footer-icon);
+fill: var(--main-color1);
+}
+.ellipse1:hover {
+background-color: var(--main-color2);
 }
 .footer .ellipse {
 fill:var(--footer-icon);
@@ -385,22 +427,29 @@ color: var(--main-color4);
 font-weight: 500;
 font-style: normal;
 }
+
+
+/* End Footer */
+
+
+
+/* Portfolio */
+
 /* boxbutton */
+
 .boxbutton {
 margin-right:8px;
 }
 .boxbutton:last-of-type {
 margin-right:0;
 }
-.boxbutton:hover {
-box-shadow: 3px 3px 5px 2px var(--boxes-hover);}
 /* Button3 */
 .button3 {
 display: flex;
 justify-content: center;
 margin-bottom: 50px;
 }  
-/* Portfolio */
+/* button2 */
 .button2 {
 cursor: pointer;
 background:var(--main-color6);
@@ -416,9 +465,12 @@ border-radius: 4px;
 .button2:hover {
 background-color:var(--main-color2);
 color: var(--main-color1);
+box-shadow: 3px 3px 5px 2px var(--boxes-hover);
 }
-/* List-item4 */
-.list-item4 {
+
+
+/* Posters */
+.posters {
 display: flex;
 flex-wrap: wrap;
 gap: 30px;
@@ -450,7 +502,7 @@ margin:0;
 .boxes {
 width: calc((100% - 60px) / 3);
 }
-/* a hover listitem4 */
-.boxes:hover {
+/* posters a:hover */
+.posters a:hover {
 box-shadow: 2px 2px 5px 2px var(--boxes-hover);
 }
