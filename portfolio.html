@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="uk">
   
-  
+  <!-- Head -->
     <head>
     <!-- Meta -->
       <meta charset="utf-8">
@@ -16,183 +16,185 @@
     <link rel="stylesheet" href="./css/styles.css">
     </head>
     <body>
-      <header class="topline">
-        <div class="container flex">
-    <!-- Navigation -->
-    <nav class="flex">
-      <a href="./index.html" class="logo lg1"><span class="web">Web</span>Studio</a>
-      <ul class="flex">
-        <li><a href="./index.html" class="link studio">Студія</a></li>
-        <li><a href="./portfolio.html" class="link portfolio current">Портфоліо</a></li>
-        <li><a href="#" class="link contacts">Контакти</a></li>
-      </ul>
-    </nav>
-    <ul class="flex">
-      <li>
-        <svg class="address-icon" width="16" height="12">
-          <use href="./images/icons.svg#envelope"></use>
-        </svg>
-        <a href="mailto:info@devstudio.com" class="address1 link">
-        info@devstudio.com</a></li>
-      <li>
-        <svg class="address-icon" width="10" height="16">
-          <use href="./images/icons.svg#smartphone"></use>
-        </svg>
-          <a href="tel:+380961111111" class="address2 link">+38 096 111 11 11</a></li>
-    </ul>
-  </div>
-      </header>
+      <header>
+        <!-- Header -->    
+            <div class="container">
+        <!-- Navigation -->
+        <nav>
+          <a href="./index.html" class="logo"><span class="web">Web</span>Studio</a>
+          <ul>
+            <li><a href="./index.html">Студія</a></li>
+            <li><a href="./portfolio.html" class="current">Портфоліо</a></li>
+            <li><a href="#">Контакти</a></li>
+          </ul>
+        </nav>
+          <ul class="contacts">
+            <li>
+              <a href="mailto:info@devstudio.com"><svg width="16" height="12">
+                <use href="./images/icons.svg#envelope"></use>
+              </svg>
+              info@devstudio.com</a>
+            </li>
+            <li>
+              <a href="tel:+380961111111"> <svg width="10" height="16">
+                  <use href="./images/icons.svg#smartphone"></use>
+              </svg>+38 096 111 11 11</a>
+              </li>
+          </ul>
+      </div>
+          </header>
+      <!-- Main -->
     <main>
-      <section  class="section">
+      <section class="section">
         <div class="container">
         <h1 class="visually-hidden">Portfolio</h1>
       <!-- Кнопки -->
-    <ul class="button3">
-        <li class="boxbutton"><button type="button" class="button2">Усі</button></li>
-        <li class="boxbutton"><button type="button" class="button2">Веб-сайти</button></li>
-        <li class="boxbutton"><button type="button" class="button2">Додатки</button></li>
-        <li class="boxbutton"><button type="button" class="button2">Дизайн</button></li>
-        <li class="boxbutton"><button type="button" class="button2">Маркетинг</button></li>
+    <ul class="button-list">
+        <li><button type="button">Усі</button></li>
+        <li><button type="button">Веб-сайти</button></li>
+        <li><button type="button">Додатки</button></li>
+        <li><button type="button">Дизайн</button></li>
+        <li><button type="button">Маркетинг</button></li>
     </ul>
     <!-- Posters -->
       <ul class="posters">
-        <li class="boxes">
+        <li>
           <a href="">
             <img src="./images/img_8.jpg" alt="Технокряк" width="370" height="294">
-      <div class="boxtext">
-            <h2 class="projname">Технокряк</h2>
-            <p class="description">Веб-сайт</p>
+      <div>
+            <h2>Технокряк</h2>
+            <p>Веб-сайт</p>
       </div>
     </a>
     </li>
-        <li class="boxes">
+        <li>
           <a href="">
             <img src="./images/img_9.jpg" alt="Постер New Orlean vs Golden Star" width="370" height="294">
-      <div class="boxtext">
-      <h2 class="projname">Постер New Orlean vs Golden Star</h2>
-      <p class="description">Дизайн</p>
+      <div>
+      <h2>Постер New Orlean vs Golden Star</h2>
+      <p>Дизайн</p>
       </div>
     </a>
     </li>
-        <li class="boxes">
+        <li>
           <a href="">
             <img src="./images/img_10.jpg" alt="Ресторан Seafood" width="370" height="294">
-      <div class="boxtext">
-            <h2 class="projname">Ресторан Seafood</h2>
-      <p class="description">Додаток</p>
+      <div>
+            <h2>Ресторан Seafood</h2>
+      <p>Додаток</p>
     </div>
   </a>
     </li>
-        <li class="boxes">
+        <li>
           <a href="">
             <img src="./images/img_11.jpg" alt="Проєкт Prime" width="370" height="294">
-      <div class="boxtext">
-            <h2 class="projname">Проєкт Prime</h2>
-      <p class="description">Маркетинг</p>
+      <div>
+            <h2>Проєкт Prime</h2>
+      <p>Маркетинг</p>
     </div>
   </a>
     </li>
-        <li class="boxes">
+        <li>
           <a href="">
             <img src="./images/img_12.jpg" alt="Проєкт Boxes" width="370" height="294">
-            <div class="boxtext">
-              <h2 class="projname">Проєкт Boxes</h2>
-      <p class="description">Додаток</p>
+            <div>
+              <h2>Проєкт Boxes</h2>
+      <p>Додаток</p>
     </div>
   </a>
     </li>
-        <li class="boxes">
+        <li>
           <a href="">
             <img src="./images/img_13.jpg" alt="Inspiration has no Borders" width="370" height="294">
-      <div class="boxtext">
-            <h2 class="projname">Inspiration has no Borders</h2>
-      <p class="description">Веб-сайт</p>
+      <div>
+            <h2>Inspiration has no Borders</h2>
+      <p>Веб-сайт</p>
     </div>
   </a>
     </li>
-        <li class="boxes">
+        <li>
           <a href="">
             <img src="./images/img_14.jpg" alt="Видання Limited Edition" width="370" height="294">
-      <div class="boxtext">
-            <h2 class="projname">Видання Limited Edition</h2>
-      <p class="description">Дизайн</p>
+      <div>
+            <h2>Видання Limited Edition</h2>
+      <p>Дизайн</p>
     </div>
   </a>
     </li>
-        <li class="boxes">
+        <li>
           <a href="">
             <img src="./images/img_15.jpg" alt="Проєкт LAB" width="370" height="294">
-      <div class="boxtext">
-            <h2 class="projname">Проєкт LAB</h2>
-      <p class="description">Маркетинг</p>
+      <div>
+            <h2>Проєкт LAB</h2>
+      <p>Маркетинг</p>
     </div>
   </a>
     </li>
-        <li class="boxes">
+        <li>
           <a href="">
             <img src="./images/img_16.jpg" alt="Growing Business" width="370" height="294">
-      <div class="boxtext">
-            <h2 class="projname">Growing Business</h2>
-      <p class="description">Додаток</p>
+      <div>
+            <h2>Growing Business</h2>
+      <p>Додаток</p>
     </div>
   </a>
     </li>
       </ul>
     </div>
     </section>
+    <!-- Posters end -->
 </main>
     <!--Bottom-->
-    <footer class="footer">
-      <div class="container"> 
+    <footer>
+      <section class="container">
+      <div>
   <!--Logo-->
-  <a href="./index.html" class="logo logo-1"><span class="web">Web</span><span class="stud1">Studio</span></a>
+  <a href="./index.html" class="logo"><span class="web">Web</span><span class="stud1">Studio</span></a>
   <!--Address-->
-  <address class="address">
-  <ul class="list-item3">
-    <li class="liitem3"><a href="https://goo.gl/maps/CPtrU1FHBa2aNyZL9" target="_blank" rel="noopener noreferrer" class="link addpos1">м. Київ, пр-т Лесі Українки, 26</a></li>
-    <li class="liitem3"><a href="mailto:info@devstudio.com" class="link addpos2">info@devstudio.com</a></li>
-    <li class="liitem3"><a href="tel:+380961111111" class="link addpos2">+38 096 111 11 11</a></li>
+  <address>
+  <ul>
+    <li><a href="https://goo.gl/maps/CPtrU1FHBa2aNyZL9" target="_blank" rel="noopener noreferrer" class="link addpos1">м. Київ, пр-т Лесі Українки, 26</a></li>
+    <li><a href="mailto:info@devstudio.com" class="link addpos2">info@devstudio.com</a></li>
+    <li><a href="tel:+380961111111" class="link addpos2">+38 096 111 11 11</a></li>
   </ul>
   </address>
-</div>
+  </div>
   <!--Приєднуйтесь-->
-  <div class="container"> 
-  <h2 class="footerhead">Приєднуйтесь</h2>
-  <ul class="list-icons">
-    <li>
-  <a href="#instagram" class="ellipse">
-    <svg class="social-links">
-      <ellipse rx="50%" ry="50%" cx="50%" cy="50%"></ellipse>
-      <use class="social-icon1" href="./images/icons.svg#instagram"></use>
-    </svg>
-  </a>
-</li>
-<li>
-  <a href="#twitter" class="ellipse">
-    <svg class="social-links">
-      <ellipse rx="50%" ry="50%" cx="50%" cy="50%"></ellipse>
-      <use class="social-icon1" href="./images/icons.svg#twitter"></use>
-    </svg>
-  </a>
+  <div>
+    <h2>Приєднуйтесь</h2>
+    <ul class="list-icons">
+      <li>
+    <a href="#instagram">
+      <svg class="social-links">
+        <use href="./images/icons.svg#instagram"></use>
+      </svg>
+    </a>
   </li>
   <li>
-  <a href="#facebook" class="ellipse">
-    <svg class="social-links">
-      <ellipse rx="50%" ry="50%" cx="50%" cy="50%"></ellipse>
-      <use class="social-icon1" href="./images/icons.svg#facebook"></use>
-    </svg>
-  </a>
-</li>
-<li>
-  <a href="#linkedin" class="ellipse">
-    <svg class="social-links">
-      <ellipse rx="50%" ry="50%" cx="50%" cy="50%"></ellipse>
-      <use class="social-icon1" href="./images/icons.svg#linkedin"></use>
-    </svg>
-  </a>
-</li>
-</ul>
-</div>
+    <a href="#twitter">
+      <svg class="social-links">
+        <use href="./images/icons.svg#twitter"></use>
+      </svg>
+    </a>
+    </li>
+    <li>
+    <a href="#facebook">
+      <svg class="social-links">
+        <use href="./images/icons.svg#facebook"></use>
+      </svg>
+    </a>
+  </li>
+  <li>
+    <a href="#linkedin">
+      <svg class="social-links">
+        <use href="./images/icons.svg#linkedin"></use>
+      </svg>
+    </a>
+  </li>
+  </ul>
+  </div>
+  </div>
+  </section>
   </footer>
 </body>
 </html>
