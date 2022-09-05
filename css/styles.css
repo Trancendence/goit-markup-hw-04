@@ -108,7 +108,8 @@ line-height: 1.2;
 color: var(--blue);
 }
 /* link hover */
-header nav ul a:hover {
+header nav ul a:hover,
+header nav ul a:active{
 color:var(--blue);
 }
 /* студія портфоліо контакти text */
@@ -128,7 +129,8 @@ align-items: center;
 justify-content: center;
 }
 /* email + tel :hover */
-header .contacts a:hover {
+header .contacts a:hover,
+header .contacts a:active {
 fill: var(--blue);
 color:var(--blue);
 }
@@ -179,7 +181,8 @@ padding: 10px 32px 10px 32px;
 border-radius: 4px;
 border: none;
 }
-.hat button:hover {
+.hat button:hover
+.hat button:active {
 cursor: pointer;
 }
 /* Шапка (hat) end */
@@ -192,6 +195,7 @@ cursor: pointer;
 .special ul {
 display: flex;
 justify-content:space-between;
+gap: 30px;
 }
 /* special h3 */
 .special h3 {
@@ -217,21 +221,16 @@ flex-basis: calc((100% -30px * 3) / 4);
 .special ul li div {
 background-color: var(--whiteF5);
 height: 120px;
-border-radius: 4px;
-margin-right: 30px;
 margin-bottom: 30px;
+border-radius: 4px;
 display: flex;
 justify-content: center;
 align-items: center;
 }
-/* last div margin right */
-#div {
-margin-right: 0px;
-}
 /* svg */
 .special svg {
 display: block;
-margin:auto;
+
 height: 70px;
 width: 70px;
 }
@@ -303,11 +302,6 @@ color:var(--grey75);
 margin: 0;
 margin-bottom: 10px;
 }
-/* svg */
-.command svg {
-width: 44px;
-height: 44px;
-}
 /* a */
 .command a {
 width: 44px;
@@ -317,7 +311,8 @@ background-color: var(--white);
 fill: var(--light-grey);
 }
 /* a hover */
-.command a:hover {
+.command a:hover,
+.command a:active {
 background-color: var(--blue);
 fill: var(--white);
 }
@@ -345,19 +340,16 @@ margin: 0;
 margin-bottom: 50px;
 }
 /* clients li */
-.clients li {
-display: inline-flex;
-flex-direction:row;
-flex-wrap:nowrap;
-height:92px;
-width: 166px;
-border: 1px solid var(--light-grey);
-border-radius: 4px;
-margin: 0;
+.clients-li {
 margin-right: 30px;
+flex-basis: calc((100% -30px * 5) / 6);
+}
+/* clients ul */
+.clients-ul {
+display: flex;
 }
 /* clients li:last-of-type */
-.clients li:last-of-type {
+.clients-li:last-of-type {
 margin-right: 0px;
 }
 /* clients li svg */
@@ -365,16 +357,19 @@ margin-right: 0px;
 width: 106px;
 height: 60px;
 }
-/* clients li a */
-.clients li a {
-width:100%;
+/* clients link */
+.clients-link {
+height: 92px;
+border: 1px solid var(--light-grey);
+border-radius: 4px;
 display: flex;
 justify-content: center;
 align-items: center;
 fill: var(--light-grey);
 }
-/* clients li a:hover */
-.clients li a:hover {
+/* clients link:hover */
+.clients-link:hover,
+.clients-link:active {
 border: 1px solid var(--blue);
 fill: var(--blue);}
 /* Clients end */
@@ -530,6 +525,9 @@ margin:0;
 /* posters li */
 .posters li {
 width: calc((100% - 60px) / 3);
+}
+.posters a {
+display: block;
 }
 /* posters a:hover */
 .posters a:hover {
